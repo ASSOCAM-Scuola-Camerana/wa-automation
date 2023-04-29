@@ -3,6 +3,6 @@
     const prefix = prompt("Inserisci il prefisso di telefono", "+39")
     const number = prompt("Inserisci il prefisso di telefono", "")
     const text = prompt("Inserisci il messaggio", "Buongiorno, la contatto da Scuola Camerana per ")
-    window.location.replace(`https://api.whatsapp.com/send?phone${prefix}${number}&message=${encodeURIComponent(text)}`, "_blank");
+    window.location.replace(`https://web.whatsapp.com/send?phone=${prefix}${number}&text=${encodeURIComponent(text)}`, "_blank");
 </script>
 </html>
